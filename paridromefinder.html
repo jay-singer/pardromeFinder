@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Finder Web</title>
+    <link rel="stylesheet" href="paridromefinder.css" />
+  </head>
+  <body>
+    <div class="main-centent">
+      <h1>Palindrome Finder!</h1>
+      <div class="inputSect">
+        <div class="parInput">
+          <label for="palindrome">Phrase:</label>
+          <input
+            type="text"
+            name="palindrome"
+            id="palindrome"
+            placeholder="Enter a phrase"
+          />
+        </div>
+        <div class="lengthPar">
+          <label for="min">Length:</label>
+          <input type="text" name="min" id="min" placeholder="min" />
+          <label for="max">to:</label>
+          <input type="text" name="max" id="max" placeholder="max" />
+        </div>
+      </div>
+      <div class="btnContainer">
+        <button type="button" id="finder">Find palindromes</button>
+        <button type="button" id="reset" onclick="reloading()">
+          Reset Input box
+        </button>
+      </div>
+
+      <div class="parOut" id="parOut">
+        <ul class="listpar" id="listPar"></ul>
+        <p id="message"></p>
+      </div>
+    </div>
+    <script src="paridromefinder.js"></script>
+  </body>
+</html>

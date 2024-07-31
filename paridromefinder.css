@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b505b;
+  box-sizing: border-box;
+}
+.main-centent {
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  gap: 20px;
+  h1 {
+    text-align: center;
+    color: #0b505b;
+    font-size: 2rem;
+  }
+  .inputSect {
+    .parInput {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      input {
+        flex: 1;
+        padding: 10px;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(172, 172, 172, 0.521);
+      }
+      label {
+        font-size: 1.3rem;
+        color: #0b505b;
+        align-self: flex-end;
+        font-weight: 600;
+      }
+    }
+  }
+  .lengthPar {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    input {
+      width: 70px;
+      padding: 5px;
+      font-size: 16px;
+      margin-left: 4px;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      background-color: rgba(172, 172, 172, 0.521);
+    }
+    input:nth-child(2) {
+      margin-right: 20px;
+    }
+  }
+
+  button {
+    margin: auto 0;
+    font-size: 18px;
+    padding: 7px 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0b505b;
+    color: #fff;
+  }
+  .parOut {
+    font-size: 18px;
+    color: #cc0000;
+  }
+  #message {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #0b505b;
+  }
+  .btnContainer {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+  }
+}
